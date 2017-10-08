@@ -1,0 +1,379 @@
+button {
+    border-radius: 0px !important;
+}
+
+
+
+@font-face{
+    font-family:"AquaGrotesque";
+    src: url("../assets/aqua.ttf");
+}
+
+a,
+a:link,
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: rgba(99, 66, 1, 1);
+}
+
+body #background {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/Background_1.jpg");
+    background-size: cover;
+    margin: 0;
+}
+
+#brand-text {
+    font-family: AquaGrotesque;
+}
+
+#contact-btn,
+#resume-btn,
+#contact-btn2 {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    padding: 5px 10px;
+    margin-left: 20px;
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+
+#contact-btn:hover{
+    box-shadow: inset 0px 0px 2em 1em rgba(255, 255, 255, 0.95);
+    color: #84450e;
+    transition: all 0.4s;
+}
+
+#resume-btn {
+    margin-left: 75px;
+    border-color: rgba(67,34,25, 1);
+    color: rgba(67,34,25, 1);
+}
+#contact-btn2{
+    color: rgba(67,34,25, 1);
+    border-color: rgba(67,34,25, 1);
+}
+
+#resume-btn:hover,
+#contact-btn2:hover {
+     box-shadow: inset 0px 0px 2em 1em rgba(67,34,25, 0.9);
+     color: rgba(255,232,214, 1);
+     transition: 0.4s;
+}
+
+
+
+/*#welcome-text{*/
+/*    position: relative;*/
+/*    top: 20%;*/
+/*    margin: 15px 15px 20px 75px;*/
+/*    color: white;*/
+/*    font-size: 3.4em;*/
+/*    text-shadow: -2px 1px 4px black;*/
+/*}*/
+.welcome-message{
+    font-family: "AquaGrotesque";
+    position: relative;
+    top: 20%;
+    margin-left: 15%; 
+    width: 600px;
+}
+
+.welcome-message h1{
+    position: relative;
+    top: 20%;
+    margin: 15px 15px 20px 75px;
+    color: white;
+    font-size: 3.3em;
+    text-shadow: -2px 1px 4px black;   
+}
+.welcome-message p{
+    position: relative;
+    margin: 15px 15px 20px 75px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-shadow: -1px 1px 2px black;   
+}
+
+.nav-item{
+    display:inline-block;
+    margin: 0 5px;
+}
+
+.nav-item:hover {
+    color: #84450e;
+    border-color: #84450e;
+    transition: 0.5s;
+}
+
+#main-nav:hover {
+    color: dimgray;
+    transition: 0.4s;
+}
+
+.nav-text {
+    font-size: 1.2em;
+}
+
+/***********ABOUT*********/
+
+#about-container{
+    margin: 0;
+    padding: 50px;
+    background-color: rgba(249, 222, 207, 0.8);
+}
+
+#profile-pic {
+    max-height: 500px;
+}
+
+.heading{
+    font-family: "AquaGrotesque";
+    padding-top: 50px;
+    margin-top: 0;
+    margin-bottom: 30px
+}
+
+#about-text{
+    margin: 40px;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+    font-size: 1.4em;
+}
+
+/***********PROJECT*************/
+
+#project-container{
+    margin: 0;
+    padding: 50px;
+    background-color: rgba(224, 188, 157, 0.8);
+}
+
+.card{
+    position: relative;
+    margin-bottom: 40px;
+    min-height: 320px;
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+.card:hover .card-img-top{
+    margin: 0;
+    transform: scale(1.2) translate(0, 8%);
+    transition: transform 0.5s;
+}
+.image-wrapper {
+    height: 85%;
+    overflow: hidden;
+}
+
+.card > .image-wrapper > img {
+    max-height: 220px;
+}
+
+.card-img-top{
+    border: none;
+    transition: 0.4s;
+}
+
+.card-body{
+    background-color: rgba(255,255,255,0.25);
+}
+
+.proj-learn-more {
+    position: relative;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.65);
+    border-color: #6F6242;
+    color: #b28118;
+}
+
+.proj-learn-more:hover {
+    background-color: rgba(204, 142, 63, 0.8);
+    border-color: #6F6242;
+    
+}
+
+.proj-info{
+    display: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.proj-link {
+    background-color: rgba(204, 142, 63, 1);
+    align-self: center;
+    color: white;
+    border-radius: 1px;
+    padding: 0.8em 1em;
+    margin-right: 5%;
+}
+
+.proj-link:hover {
+    color: white;
+}
+
+.proj-info > p{
+    margin: 0;
+    font-size: 1.3em;
+    padding: 20px;
+}
+
+.proj-info-heading{
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.proj-info-heading > h1{
+    display: inline-block;
+    margin: 0;
+    padding: 20px;
+}
+
+/*******Call to Action********/
+#call-to-action-container{
+    padding: 50px;
+    background-color: rgba(249, 222, 207, 0.8);
+}
+
+#cta-btn {
+    text-align: center;
+    white-space: normal;
+    word-wrap: normal;
+    transition: 0.5s;
+}
+
+#cta-btn:hover {
+    box-shadow: inset 0 0 5em 2em rgba(34, 34, 34, 1);
+    color: rgba(255,255,255,1);
+    transition: 0.4s;
+}
+
+
+/*******Footer********/
+#footer-container{
+    padding: 50px;
+    padding-bottom: 15px;
+}
+
+.social {
+    font-size: 1.7em;
+    color: white;
+    transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease; 
+      -webkit-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+}
+
+.social i{
+    color: inherit;
+}
+
+.social:hover {
+    color: dimgray;
+    transition: .25s ease;
+      -moz-transition: all 0.25s ease; 
+      -webkit-transition: all 0.25s ease;
+      -o-transition: all 0.25s ease;
+}
+
+.social>li {
+    transition: 0.5s;
+}
+
+.social>li:hover {
+    color: rgba(247, 212, 180, 0.8);
+    transition: 0.25s;
+}
+
+.credits{
+    font-size: 0.8em;
+    margin:3px;
+    
+}
+
+/*******MEDIA QUERIES******/
+
+/* Extra large devices (large desktops, 1200px and down)*/
+@media (min-width: 1200px) { 
+    
+}
+
+/* Large devices (desktops, 992px and down)*/
+@media (max-width: 992px) { 
+    html{
+        font-size: 14px;
+    }
+    body #background {
+        width: 100%;
+        height: 75vh;
+    }
+    
+    .welcome-message {
+        margin-left: -20px; 
+    }
+    
+    #about-text{
+        margin-left: 0.4em;
+        margin-right: 0.4em;
+    }
+    
+    #profile-pic {
+    max-height: 350px;
+}
+}
+
+/* Medium devices (tablets, 768px and down)*/
+@media (max-width: 768px) {
+    body #background {
+        width: 100%;
+        height: 50vh;
+    }
+    html {
+        font-size: 12px;
+    }
+    h1{
+        font-size: 2.35em;
+    }
+    #cta-btn {
+        width: 65%;
+        
+    }
+    #contact-btn {
+        display: none;
+    }
+    body> #background > .navbar {
+        background-color: rgba(204, 100, 51, 0.8);
+    }
+}
+
+/* Small devices (landscape phones, 576px and down)*/
+@media (max-width: 576px) {
+    body #background {
+        width: 100%;
+        height: 40vh;
+    }
+    #profile-pic {
+        display: none;
+    }
+    .welcome-message{
+        font-size: 10px;
+        margin-left: -10px;
+        padding-right: 
+    }
+    .heading {
+        padding-top: none;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+/* No media query since this is the default in Bootstrap*/
